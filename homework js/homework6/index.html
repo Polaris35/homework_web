@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework6</title>
+</head>
+
+<body>
+    <script>
+        function filterBy(mass, type) {
+            let rezult = [];
+            mass.forEach((val, ind, arr) => {
+                if (type != typeof val) {
+                    rezult.push(val);
+                }
+            });
+            return rezult;
+        }
+        console.log(filterBy(['hello', 'world', 23, '23', null], "string"))
+    </script>
+</body>
+
+</html>

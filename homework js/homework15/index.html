@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>homework6</title>
+</head>
+
+<body>
+    <button onclick="topFunction()" id="goToTopBtn" title="Go to top">Top</button>
+    <header name="home" class="header">
+        <a class="header__logo">
+            <img src="img/logo-img.png" alt="logo-img.png">
+            <span>Architect</span>
+        </a>
+        <nav class="header__navBar">
+            <!-- <a href="#home" class="header__link">Home</a> -->
+            <a href="#posts" class="header__link">MOST POPULAR POSTS</a>
+            <a href="#clients" class="header__link">OUR MOST POPULAR CLIENTS</a>
+            <a href="#rated" class="header__link">TOP RATED</a>
+            <a href="#news" class="header__link">HOT NEWS</a>
+        </nav>
+        <i class="fa-solid fa-magnifying-glass header__search"></i>
+    </header>
+    <main class="main">
+
+        <section class="arcitecture arcitecture__parallax">
+            <div class="wrapper">
+                <div class="arcitecture__title">
+                    THE LATEST NEWS ON DESIGN & ARCHITECTURE
+                </div>
+                <div class="arcitecture__buttons">
+                    <button id="subscribe_btn" class="arcitecture__button">
+                        Subscribe Now
+                    </button>
+                    <button id="articles_btn" class="arcitecture__button">
+                        Best Articles
+                    </button>
+                </div>
+            </div>
+        </section>
+        <a name="posts"></a>
+        <section class="posts">
+            <div class="wrapper">
+                <div class="posts__title title">
+                    Most popular posts
+                </div>
+                <div class="posts__gallery">
+                    <div class="posts__columns">
+                        <div class="posts__item">
+                            <img src="img/posts/post-1.png" alt="post-1.png" class="posts__img">
+                            <div class="posts__descr">Most popular posts</div>
+                        </div>
+                        <div class="posts__item">
+                            <img src="img/posts/post-4.png" alt="post-4.png" class="posts__img">
+                            <div class="posts__descr">Royal Blossom Hotel & Spa in USA</div>
+                        </div>
+                    </div>
+                    <div class="posts__columns">
+                        <div class="posts__item">
+                            <img src="img/posts/post-2.png" alt="post-2.png" class="posts__img">
+                            <div class="posts__descr">Sunrise Expanse Hotel in USA</div>
+                        </div>
+                        <div class="posts__item">
+                            <img src="img/posts/post-5.png" alt="post-5.png" class="posts__img">
+                            <div class="posts__descr">Sunset Shack Hotel in Spain</div>
+                        </div>
+                    </div>
+                    <div class="posts__columns">
+                        <div class="posts__item">
+                            <img src="img/posts/post-3.png" alt="post-3.png" class="posts__img">
+                            <div class="posts__descr">Stargaze Resort & Spa in USA</div>
+                        </div>
+                        <div class="posts__item">
+                            <img src="img/posts/post-6.png" alt="post-6.png" class="posts__img">
+                            <div class="posts__descr">Glorious Expanse Hotel in France</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <a name="clients"></a>
+        <section class="clients clients__parallax">
+            <div class="wrapper">
+                <div class="clients__title title">our most popular clients</div>
+                <div class="clients__delimiter"></div>
+                <div class="clients__grid">
+                    <img src="img/clients/client1.png" alt="client1.png" class="clients__logo">
+                    <img src="img/clients/client2.png" alt="client2.png" class="clients__logo">
+                    <img src="img/clients/client3.png" alt="client3.png" class="clients__logo">
+                    <img src="img/clients/client4.png" alt="client4.png" class="clients__logo">
+                </div>
+            </div>
+        </section>
+        <a name="rated"></a>
+        <section class="rate">
+            <div class="rate__title title">
+                Top rated
+            </div>
+            <div class="rate__gallery">
+                <img src="img\rate\latest-post-1.png" alt="latest-post-1.png" class="rate__img">
+                <img src="img\rate\latest-post-2.png" alt="latest-post-2.png" class="rate__img">
+                <img src="img\rate\latest-post-3.png" alt="latest-post-3.png" class="rate__img">
+                <img src="img\rate\latest-post-4.png" alt="latest-post-4.png" class="rate__img">
+                <img src="img\rate\latest-post-5.png" alt="latest-post-5.png" class="rate__img">
+                <img src="img\rate\latest-post-6.png" alt="latest-post-6.png" class="rate__img">
+                <img src="img\rate\latest-post-7.png" alt="latest-post-7.png" class="rate__img">
+            </div>
+        </section>
+        <a name="news"></a>
+        <section class="news">
+            <div class="wrapper">
+                <div class="news__title title">
+                    hot news
+                </div>
+                <div id="gallery" class="news__gallery gallery">
+                    <div class="gallery__item_big">
+                        <img src="img\news\news1.png" alt="news1.png" class="gallery__img">
+                        <div class="gallery__title">Prophecy Hotel & Spa in Emirate</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                    <div class="gallery__item_small">
+                        <img src="img\news\news2.png" alt="news2.png" class="gallery__img">
+                        <div class="gallery__title">Nebula Hotel in Spain</div>
+                    </div>
+                    <div class="gallery__item_medium">
+                        <img src="img\news\news3.png" alt="news3.png" class="gallery__img">
+                        <div class="gallery__title">Western Pyramid Resort in Egypt</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                    <div class="gallery__item_medium">
+                        <img src="img\news\news4.png" alt="news4.png" class="gallery__img">
+                        <div class="gallery__title">Grand Meadows Resort in Maldives</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                    <div class="gallery__item_medium">
+                        <img src="img\news\news5.png" alt="news5.png" class="gallery__img">
+                        <div class="gallery__title">Wanderlust Resort in Tenerife</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                    <div class="gallery__item_medium">
+                        <img src="img\news\news6.png" alt="news6.png" class="gallery__img">
+                        <div class="gallery__title">Twin Sanctuary Hotel in Great Britain</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                    <div class="gallery__item_small">
+                        <img src="img\news\news7.png" alt="news7.png" class="gallery__img">
+                        <div class="gallery__title">Prism Hotel in Ireland</div>
+                    </div>
+                    <div class="gallery__item_big">
+                        <img src="img\news\news8.png" alt="news8.png" class="gallery__img">
+                        <div class="gallery__title">King's Shroud Resort in Spain</div>
+                        <div class="gallery__descr">Amazing Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                            filled with rocks, concrete, or sometimes sand and
+                            soil and It is a great way to decorate your outdoor. Amazing Gabion Ideas for Outdoors A
+                            Gabion is a cage box or
+                            cylinder filled with rocks, concrete, or sometimes sand and soil and It is a great way to
+                            decorate your outdoor</div>
+                    </div>
+                </div>
+                <button id="gallery__hidden" class="gallery__btn">
+                    show/hide news
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__row">
+                <span class="footer__rights">All Rights Reserved © 2014 architect.com - Interior Design & Architecture
+                    Magazine</span>
+                <div class="footer__logo">
+                    <img src="img/footer_logo.png" alt="footer_logo.png">
+                    <img src="img/footer_logoText.png" alt="footer_logoText.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/7aa5d41a5b.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

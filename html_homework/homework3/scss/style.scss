@@ -1,0 +1,83 @@
+@import "_resetcss";
+
+body {
+    background: url(../img/background.png) center center/100% 100% no-repeat;
+    height: 100vh;
+    color: #fff;
+    font-family: Verdana;
+}
+
+.container {
+    max-width: 1060px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 141px 1fr;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    // padding-top: 50px;
+    align-items: center;
+    &__logo {
+    }
+
+    &__contacts {
+        font-size: 18px;
+        text-align: right;
+    }
+    &__link {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.logo {
+    display: flex;
+    text-decoration: none;
+    &__img {
+        float: left;
+    }
+
+    &__text {
+        display: inline-block;
+        font-size: 29px;
+        margin-left: 15px;
+        color: #fff;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+    }
+}
+
+.gallery {
+    &__grid {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    &__cell {
+    }
+}
+.cell {
+    &_descr {
+        text-align: center;
+        margin-top: 22px;
+        font-size: 18px;
+    }
+
+    &__img {
+        border: 1px solid;
+        border-image-slice: 1;
+        border-width: 1px;
+        border-image-source: linear-gradient(to bottom, #fff, #000);
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 59px;
+    font-size: 12px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>homework8</title>
+</head>
+
+<body>
+    <header id="header"></header>
+    <input id="input" type="number" placeholder="price">
+    <div id="error"></div>
+    <script>
+        let header = document.getElementById('header'),
+            error = document.getElementById('error'),
+            input = document.getElementById('input');
+        input.onfocus = function () {
+            error.innerHTML = ""
+        }
+        input.onblur = function () {
+            if (input.value < 0) {
+                error.innerHTML = 'Please enter correct price.'
+                return;
+            }
+
+            let span = document.createElement("span");
+            let btnDelete = document.createElement("button");
+            btnDelete.innerHTML = "X";
+            btnDelete.className = "btnDelete";
+            btnDelete.onclick = () => {
+                span.remove();
+                input.value = ""
+            }
+            span.className = "price";
+            span.innerHTML = `Текущая цена: ${input.value}.`;
+
+            span.append(btnDelete);
+            header.append(span);
+
+        }
+
+    </script>
+</body>
+
+</html>

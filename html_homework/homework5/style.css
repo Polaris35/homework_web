@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+table,
+th,
+td {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-collapse: collapse;
+    /* background-color: #fafafa; */
+    background-color: #f2f2f2;
+    font-size: 16px;
+    color: #484848;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arimo;
+    background-color: #3a4965;
+}
+
+table {
+    width: 1142px;
+    height: 680px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #484848;
+    background-color: #fafafa;
+    min-height: 310px;
+}
+
+.title b {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.plan {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    height: 70px;
+}
+
+.price {
+    background-color: #fafafa;
+    height: 86px;
+    text-align: left;
+}
+.price span {
+    font-size: 60px;
+    font-weight: bold;
+    float: left;
+    margin-left: 34px;
+}
+
+.price b {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 10px;
+}
+tr th:nth-child(2) {
+    background-color: #89c331;
+}
+tr th:nth-child(3) {
+    background-color: #f04a56;
+}
+tr th:nth-child(4) {
+    background-color: #20807c;
+}
+
+table tr td {
+    background-color: #f2f2f2;
+    height: 69px;
+}
+
+table tr:nth-child(2n + 4) td {
+    background-color: #e3e3e3;
+}
+
+.icons {
+    color: #848484;
+    margin-right: 12px;
+    width: 23px;
+    height: 20px;
+}
+
+.contactUs {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    width: 192px;
+    height: 49px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: 0;
+}
+table tr:last-child td {
+    height: 110px;
+}
+
+td:nth-child(1) button {
+    background-color: #484848;
+    border: 0;
+    width: 192px;
+    height: 49px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-bottom: 7px solid #404040;
+}
+td:nth-child(2) button {
+    background-color: #89c331;
+    border-bottom: 7px solid #79b027;
+}
+td:nth-child(3) button {
+    background-color: #f04a56;
+    border-bottom: 7px solid #df3a46;
+}
+td:nth-child(4) button {
+    background-color: #20807c;
+    border-bottom: 7px solid #16736f;
+}

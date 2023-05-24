@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    height: 100vh;
+}
+
+#theme_btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 150px;
+    height: 50px;
+}

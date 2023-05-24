@@ -1,0 +1,154 @@
+@import "resetcss";
+@import url("https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap");
+
+body {
+    height: 100vh;
+    background-color: #3a4965;
+    font-family: Arimo;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    margin-top: 50px;
+    height: 610px;
+    text-align: center;
+    grid-template-areas:
+        "header header header"
+        "plan rows rows";
+
+    background-color: #f2f2f2;
+
+    &__header {
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 200px repeat(6, 157px);
+        grid-template-rows: 112px;
+        justify-content: center;
+        align-content: center;
+        & > div {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-collapse: collapse;
+        }
+    }
+
+    &__header > div:nth-of-type(even) {
+        background-color: #e3e3e3;
+    }
+
+    &__header > div,
+    &__rows > div,
+    &__plan > div {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        border-collapse: collapse;
+    }
+
+    &__plan {
+        display: grid;
+        grid-area: plan;
+        grid-template-columns: 200px;
+        grid-template-rows: repeat(3, 166px);
+    }
+    &__plan > div:nth-of-type(1) {
+        background-color: #89c331;
+    }
+    &__plan > div:nth-of-type(2) {
+        background-color: #f04a56;
+    }
+    &__plan > div:nth-of-type(3) {
+        background-color: #20807c;
+    }
+
+    &__rows {
+        display: grid;
+        grid-template-columns: repeat(6, 157px);
+        & > div {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            border-collapse: collapse;
+        }
+    }
+
+    &__rows > div:nth-of-type(odd) {
+        background-color: #e3e3e3;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: #484848;
+    }
+    &__title:first-child {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    &__title:first-child b {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 16px;
+        color: #484848;
+    }
+}
+
+.icons {
+    color: #848484;
+    font-size: 1.2em;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    &__price {
+        font-size: 14px;
+        font-weight: bold;
+        color: #fff;
+    }
+
+    &__price span:first-child {
+        font-size: 36px;
+    }
+
+    &__price span:last-child {
+        font-size: 18px;
+    }
+
+    &__button {
+        width: 144px;
+        height: 41px;
+        border-radius: 5px;
+        background-color: #414141;
+        font-size: 16px;
+        font-weight: bold;
+        color: #fff;
+        border-bottom: 5px solid #343434;
+        text-transform: uppercase;
+    }
+}

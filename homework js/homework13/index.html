@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>homework7</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <ul id="list">
+        </ul>
+        <button id="theme_btn">change theme</button>
+    </div>
+    <script>
+        function write(mass) {
+            let elem = document.getElementById('list');
+            mass.map((item) => {
+                let li = document.createElement("li");
+                li.innerHTML = item;
+                elem.append(li);
+            })
+        }
+        write(['hello', 'world', 'Kiev', 'Kharkiv', 'Odessa', 'Lviv']);
+
+
+
+        changeTheme(localStorage.getItem('theme'));
+        let btn = document.getElementById("theme_btn");
+        btn.onclick = () => {
+            localStorage.setItem("theme",localStorage.getItem('theme') === "dark" ? "light" : "dark");
+            changeTheme(localStorage.getItem('theme'));
+        }
+
+        function changeTheme(theme) {
+            let wrapper = document.querySelector(".wrapper");
+            if(theme === "dark")
+            {
+                wrapper.style = "color: white;\n" +
+                    "    background-color: gray;";
+            }
+            else{
+                wrapper.style = "color: black;\n" +
+                "    background-color: white;";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

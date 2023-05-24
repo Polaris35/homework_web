@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background: url(../img/background.png) center center/100% 100% no-repeat;
+  height: 100vh;
+  color: #fff;
+  font-family: Verdana;
+}
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 141px 1fr;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__contacts {
+  font-size: 18px;
+  text-align: right;
+}
+.header__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  display: flex;
+  text-decoration: none;
+}
+.logo__img {
+  float: left;
+}
+.logo__text {
+  display: inline-block;
+  font-size: 29px;
+  margin-left: 15px;
+  color: #fff;
+}
+.logo__subtitle {
+  font-size: 18px;
+}
+
+.gallery__grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+  justify-content: space-between;
+}
+.cell_descr {
+  text-align: center;
+  margin-top: 22px;
+  font-size: 18px;
+}
+.cell__img {
+  border: 1px solid;
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to bottom, #fff, #000);
+}
+
+.footer {
+  text-align: center;
+  margin-top: 59px;
+  font-size: 12px;
+}

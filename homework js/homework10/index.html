@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Homework-buttons</title>
+    <style>
+      .password-form {
+        display: flex;
+        flex-direction: column;
+      }
+      .input-wrapper {
+        position: relative;
+				width: intrinsic;       
+			  width: -moz-max-content;   
+  			width: -webkit-max-content;
+      }
+
+      .input-wrapper input {
+        min-width: 120px;
+        padding: 10px;
+        margin-bottom: 24px;
+      }
+
+      .input-wrapper i {
+        position: absolute;
+        right: 10px;
+        top: 12px;
+        color: grey;
+      }
+
+			.btn{
+				width: 150px;
+
+			}
+
+    </style>
+  </head>
+  <body>
+    <form id="form" class="password-form" action="#" type="POST">
+			<label class="input-wrapper">
+				Ввести пароль
+				<input id="inputPassword" type="password"/>
+				<i id="inputPasswordIcon" class="fas fa-eye icon-password"></i>
+			</label>
+      <label class="input-wrapper">
+				Подтвердить пароль
+				<input id="confirmPassword" type="password"/>
+                <i id="confirmPasswordIcon" class="fas fa-eye icon-password"></i>
+<!--				<i id="confirmPasswordIcon" class="fas fa-eye-slash icon-password"></i>-->
+			</label>
+			<button id="btn_submit" type="submit" class="btn">Подтвердить</button>
+    </form>
+    <script>
+        document.getElementById("inputPasswordIcon").onclick = (e)=>{
+            let input = document.getElementById("inputPassword");
+            let icon = document.getElementById("inputPasswordIcon");
+
+            let type = input.getAttribute("type") === "password" ? "text" : "password";
+            input.setAttribute("type", type);
+            console.log(icon.className);
+            icon.className = icon.className === "fas fa-eye-slash icon-password" ?
+                "fas fa-eye icon-password" : "fas fa-eye-slash icon-password";
+        }
+        document.getElementById("confirmPasswordIcon").onclick = (e)=>{
+            let input = document.getElementById("confirmPassword");
+            let icon = document.getElementById("confirmPasswordIcon");
+
+            let type = input.getAttribute("type") === "password" ? "text" : "password";
+            input.setAttribute("type", type);
+            console.log(icon.className);
+            icon.className = icon.className === "fas fa-eye-slash icon-password" ?
+                "fas fa-eye icon-password" : "fas fa-eye-slash icon-password";
+        }
+
+        document.getElementById("btn_submit").onclick = (e)=> {
+            let password = document.getElementById("inputPassword");
+            let confirm = document.getElementById("confirmPassword");
+            if(password.value === confirm.value)
+                alert("You are welcome")
+            else
+                alert("Нужно ввести одинаковые значения")
+        }
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homework7</title>
+</head>
+
+<body>
+    <ul id="list">
+    </ul>
+    <script>
+        function write(mass) {
+            let elem = document.getElementById('list');
+            mass.map((item) => {
+                let li = document.createElement("li");
+                li.innerHTML = item;
+                elem.append(li);
+            })
+        }
+        write(['hello', 'world', 'Kiev', 'Kharkiv', 'Odessa', 'Lviv']);
+    </script>
+</body>
+
+</html>
